@@ -15,4 +15,4 @@ docker run --rm -v $(pwd):/app alvarofpp/docker-image-here " \
   command-here"
 ```
 
-[docker-hub]: https://hub.docker.com/repository/docker/alvarofpp/docker-image-name
+[docker-hub]: https://hub.docker.com/r/alvarofpp/docker-image-name
