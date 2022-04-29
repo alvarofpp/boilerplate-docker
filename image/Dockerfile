@@ -9,6 +9,7 @@ RUN apk --no-cache add findutils  \
     curl \
     bash-completion \
     git
+RUN git config --global --add safe.directory /app
 
 # Install apps here
 
