@@ -1,9 +1,12 @@
----
-# name: Publishes the docker image on DockerHub.
+# ---
+# name: Publishes the docker image on DockerHub
 
 # on:
 #   push:
-#     branches: [ main ]
+#     branches:
+#       - main
+#     paths:
+#       - 'image/**'
 
 # jobs:
 #   publish:
