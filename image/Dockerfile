@@ -1,4 +1,4 @@
-FROM alpine:3.15
+FROM alpine:3.19.0
 
 # Set environment variables
 ENV HOME=/root
@@ -14,10 +14,8 @@ RUN git config --global --add safe.directory /app
 # Install apps here
 
 # Adds shell commands
-COPY ./commands/*.sh /usr/bin/
-RUN find /usr/bin -type f -name "*.sh" | while read NAME ; do mv "${NAME}" "${NAME%.sh}" ; done
+COPY ./commands/* /usr/bin/
 
 # Workdir and entrypoint
 WORKDIR ${WORKDIR}
-
 ENTRYPOINT ["docker-entrypoint"]
