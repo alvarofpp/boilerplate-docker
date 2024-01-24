@@ -1,8 +1,10 @@
 # Variables
-DOCKER_IMAGE=alvarofpp/docker-image-name
-DOCKER_IMAGE_LINTER=alvarofpp/base:linter
+DOCKER_IMAGE=alvarofpp/boilerplate
 ROOT=$(shell pwd)
 DIR=image/
+
+## Lint
+DOCKER_IMAGE_LINTER=alvarofpp/linter:base
 LINT_COMMIT_TARGET_BRANCH=origin/main
 
 # Commands
@@ -29,5 +31,5 @@ lint:
 		lint-commit ${LINT_COMMIT_TARGET_BRANCH} \
 		&& lint-markdown \
 		&& lint-dockerfile \
-		&& lint-shell-script \
-		&& lint-yaml"
+		&& lint-yaml \
+		&& lint-shell"

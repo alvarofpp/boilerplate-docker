@@ -5,14 +5,14 @@
 Description here.
 
 ```shell
-docker pull alvarofpp/docker-image-name
+docker pull alvarofpp/boilerplate
 ```
 
 ## How to use
 
 ```shell
-docker run --rm -v $(pwd):/app alvarofpp/docker-image-here " \
+docker run --rm -v $(pwd):/app alvarofpp/boilerplate " \
   command-here"
 ```
 
-[docker-hub]: https://hub.docker.com/r/alvarofpp/docker-image-name
+[docker-hub]: https://hub.docker.com/r/alvarofpp/boilerplate
